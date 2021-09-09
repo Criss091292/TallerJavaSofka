@@ -79,6 +79,10 @@ public class Menu {
                         }
                     }
                     break;
+                case 5:
+                    Ejercicio5 ejercicio5 = new Ejercicio5();
+                    System.out.println(ejercicio5.mostrarParesEImparesHastaN(100));
+                    break;
 
                 default:
                     break;
