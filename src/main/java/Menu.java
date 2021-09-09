@@ -133,6 +133,12 @@ public class Menu {
                     String mensajeAConcatenar = scanner.nextLine();
                     System.out.println(ejercicio9.concatenarMensaje(mensajeAReemplazar,mensajeAConcatenar));
                     break;
+                case 10:
+                    Ejercicio10 ejercicio10 = new Ejercicio10();
+                    System.out.println("Ingrese mensaje al cual quitar los espacios:");
+                    String mensajeAQuitarEspacios = scanner.nextLine();
+                    System.out.println(ejercicio10.eliminarEspacios(mensajeAQuitarEspacios));
+                    break;
                 default:
                     break;
             }
