@@ -157,6 +157,10 @@ public class Menu {
                     palabra2 = segundaPalabra[0];
                     System.out.println(ejercicio12.compararPalabras(palabra1,palabra2));
                     break;
+                case 13:
+                    Ejercicio13 ejercicio13 = new Ejercicio13();
+                    System.out.println(ejercicio13.obtenerFechaActual());
+                    break;
                 default:
                     break;
             }
