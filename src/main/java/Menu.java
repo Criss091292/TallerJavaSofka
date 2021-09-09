@@ -60,6 +60,25 @@ public class Menu {
                         }
                     }
                     break;
+                case 4:
+                    Ejercicio4 ejercicio4 = new Ejercicio4();
+                    boolean argumentosValidosEjercicio4 = false;
+                    while(!argumentosValidosEjercicio4){
+                        try{
+                            System.out.println("Ingrese el precio del producto");
+                            Double precio = Double.parseDouble(scanner.nextLine());
+                            Double precioConIva = ejercicio4.calcularIva(precio);
+                            if(precio>=0){
+                                System.out.println("El precio con Iva del producto es: "+precioConIva);
+                                argumentosValidosEjercicio4=true;
+                            }else{
+                                System.out.println("Solo numero mayores que 0");
+                            }
+                        }catch (IllegalArgumentException e){
+                            System.out.println("Argumento incorrecto, solo numeros mayores que 0.");
+                        }
+                    }
+                    break;
 
                 default:
                     break;
