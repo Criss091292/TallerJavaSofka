@@ -87,7 +87,23 @@ public class Menu {
                     Ejercicio6 ejercicio6 = new Ejercicio6();
                     System.out.println(ejercicio6.mostrarParesEImparesHastaN(100));
                     break;
+                case 7:
+                    Ejercicio7 ejercicio7 = new Ejercicio7();
+                    boolean argumentosValidosEjercicio7 = false;
+                    do{
+                        try{
+                            Double numero = Double.parseDouble(JOptionPane.showInputDialog(null,"Escriba el primer numero"));
+                            if(ejercicio7.EsMayorOIgualQueCero(numero)){
+                                System.out.println("El numero dado ("+numero+") es mayor o igual que 0");
+                                argumentosValidosEjercicio7=true;
+                            }else{
+                                System.out.println("Solo numero mayores o iguales que 0");
+                            }
 
+                        }catch (IllegalArgumentException e){
+                            System.out.println("Argumento incorrecto, solo numeros mayores que 0.");
+                        }
+                    }while(!argumentosValidosEjercicio7);
                 default:
                     break;
             }
