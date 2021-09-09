@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Ejercicio1Test" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-09-09T14:36:28" hostname="DESKTOP-E0OVML7" time="0.095">
+  <properties/>
+  <testcase name="dados dos numeros debe retornar el numero mayor" classname="Ejercicio1Test" time="0.095"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
