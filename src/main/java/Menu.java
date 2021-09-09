@@ -161,6 +161,21 @@ public class Menu {
                     Ejercicio13 ejercicio13 = new Ejercicio13();
                     System.out.println(ejercicio13.obtenerFechaActual());
                     break;
+                case 14:
+                    Ejercicio14 ejercicio14 = new Ejercicio14();
+                    boolean argumentosValidosEjercicio14 = false;
+                    String mensajeEjercicio ="";
+                    while(!argumentosValidosEjercicio14) {
+                        try {
+                            System.out.println("Escriba el numero desde el cual mostrar la secuencia:");
+                            int a = Integer.parseInt(scanner.nextLine());
+                            mensajeEjercicio = ejercicio14.mostrarSecuanciaDesdeNHastaMilConIncrementosDeDos(a);
+                            argumentosValidosEjercicio14 = true;
+                        } catch (IllegalArgumentException e) {
+                            System.out.println("Argumento incorrecto, solo numeros enteros.");
+                        }
+                    }
+                    System.out.println(mensajeEjercicio);
                 default:
                     break;
             }
