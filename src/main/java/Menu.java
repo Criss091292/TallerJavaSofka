@@ -123,6 +123,16 @@ public class Menu {
                     }else{
                         System.out.println("No es dia laboral");
                     }
+                    break;
+                case 9:
+                    Ejercicio9 ejercicio9 = new Ejercicio9();
+                    String mensajeAReemplazar = "La sonrisa sera la mejor arma contra la tristeza";
+                    String mensajeReemplazado = ejercicio9.reemplazarLetraAPorEDentroDeCadenasDeTexto(mensajeAReemplazar);
+                    System.out.println(mensajeReemplazado);
+                    System.out.println("Ingrese mensaje a concatenar:");
+                    String mensajeAConcatenar = scanner.nextLine();
+                    System.out.println(ejercicio9.concatenarMensaje(mensajeAReemplazar,mensajeAConcatenar));
+                    break;
                 default:
                     break;
             }
