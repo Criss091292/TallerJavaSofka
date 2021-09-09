@@ -139,6 +139,12 @@ public class Menu {
                     String mensajeAQuitarEspacios = scanner.nextLine();
                     System.out.println(ejercicio10.eliminarEspacios(mensajeAQuitarEspacios));
                     break;
+                case 11:
+                    Ejercicio11 ejercicio11 = new Ejercicio11();
+                    System.out.println("Ingrese mensaje al cual contar longitud y vocales:");
+                    String mensaje = scanner.nextLine();
+                    System.out.println(ejercicio11.contarCadaVocalYLongitudDelMensaje(mensaje));
+                    break;
                 default:
                     break;
             }
