@@ -145,6 +145,18 @@ public class Menu {
                     String mensaje = scanner.nextLine();
                     System.out.println(ejercicio11.contarCadaVocalYLongitudDelMensaje(mensaje));
                     break;
+                case 12:
+                    Ejercicio12 ejercicio12 = new Ejercicio12();
+                    System.out.println("Ingrese la primera palabra:");
+                    String palabra1 = scanner.nextLine();
+                    String palabra[]= palabra1.split(" ");
+                    palabra1 = palabra[0];
+                    System.out.println("Ingrese la segunda palabra:");
+                    String palabra2 = scanner.nextLine();
+                    String segundaPalabra[] = palabra2.split(" ");
+                    palabra2 = segundaPalabra[0];
+                    System.out.println(ejercicio12.compararPalabras(palabra1,palabra2));
+                    break;
                 default:
                     break;
             }
