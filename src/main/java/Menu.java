@@ -45,6 +45,21 @@ public class Menu {
                         }
                     }
                     break;
+                case 3:
+                    Ejercicio3 ejercicio3 = new Ejercicio3();
+                    boolean argumentosValidosEjercicio3 = false;
+                    while(!argumentosValidosEjercicio3){
+                        try{
+                            System.out.println("Ingrese el radio");
+                            Double radio = Double.parseDouble(scanner.nextLine());
+                            Double area = ejercicio3.calcularAreaCirculo(radio);
+                            System.out.println("El area del circulo es: "+area);
+                            argumentosValidosEjercicio3=true;
+                        }catch (IllegalArgumentException e){
+                            System.out.println("Argumento incorrecto, solo numeros.");
+                        }
+                    }
+                    break;
 
                 default:
                     break;
