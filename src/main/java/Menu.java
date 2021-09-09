@@ -104,6 +104,25 @@ public class Menu {
                             System.out.println("Argumento incorrecto, solo numeros mayores que 0.");
                         }
                     }while(!argumentosValidosEjercicio7);
+                case 8:
+                    Ejercicio8 ejercicio8 = new Ejercicio8();
+                    boolean argumentosValidosEjercicio8 = false;
+                    String diaSemana="";
+                    do{
+                        System.out.println("Escriba el dia de la semana");
+                        diaSemana = scanner.next();
+                        if(diaSemana.equalsIgnoreCase("lunes")||diaSemana.equalsIgnoreCase("martes")
+                                ||diaSemana.equalsIgnoreCase("miercoles")||diaSemana.equalsIgnoreCase("jueves")
+                                ||diaSemana.equalsIgnoreCase("viernes")||diaSemana.equalsIgnoreCase("sabado")
+                                ||diaSemana.equalsIgnoreCase("domingo")){
+                            argumentosValidosEjercicio8=true;
+                        }
+                    }while(!argumentosValidosEjercicio8);
+                    if(ejercicio8.esDiaLaboral(diaSemana)){
+                        System.out.println("Es dia laboral");
+                    }else{
+                        System.out.println("No es dia laboral");
+                    }
                 default:
                     break;
             }
