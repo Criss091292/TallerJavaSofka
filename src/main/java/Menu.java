@@ -1,3 +1,6 @@
+
+import Ejercicio16.Principal;
+
 import javax.swing.*;
 
 import java.util.Scanner;
@@ -180,6 +183,9 @@ public class Menu {
                     Ejercicio15 ejercicio15 = new Ejercicio15();
                     ejercicio15.mostrarMenu();
                     break;
+                case 16:
+                    Principal principal = new Principal();
+                    principal.mostrarPersonas();
                 default:
                     break;
             }
