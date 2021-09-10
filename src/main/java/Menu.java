@@ -1,5 +1,6 @@
 
 import Ejercicio16.Principal;
+import Ejercicio18.EjecutarSerieYVideojuego;
 
 import javax.swing.*;
 
@@ -186,6 +187,8 @@ public class Menu {
                 case 16:
                     Principal principal = new Principal();
                     principal.mostrarPersonas();
+                case 18:
+                    EjecutarSerieYVideojuego ejecutarSerieYVideojuego = new EjecutarSerieYVideojuego();
                 default:
                     break;
             }
