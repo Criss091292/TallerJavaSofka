@@ -176,6 +176,10 @@ public class Menu {
                         }
                     }
                     System.out.println(mensajeEjercicio);
+                case 15:
+                    Ejercicio15 ejercicio15 = new Ejercicio15();
+                    ejercicio15.mostrarMenu();
+                    break;
                 default:
                     break;
             }
